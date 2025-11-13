@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechForce – Task 6 (Form & Validation)</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>TechForce</h1>
+    <p>Task 6 – Form Styling & Validation</p>
+  </header>
+
+  <div class="container">
+    <h2>Contact Form</h2>
+    <p>Please fill out the form below. All fields are required.</p>
+
+    <form id="contactForm" novalidate>
+      
+      <!-- Name -->
+      <label>Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name">
+      <small class="error" id="nameError"></small>
+
+      <!-- Email -->
+      <label>Email Address</label>
+      <input type="email" id="email" placeholder="example@mail.com">
+      <small class="error" id="emailError"></small>
+
+      <!-- Phone -->
+      <label>Phone Number</label>
+      <input type="text" id="phone" placeholder="10-digit phone number">
+      <small class="error" id="phoneError"></small>
+
+      <!-- Message -->
+      <label>Your Message</label>
+      <textarea id="message" placeholder="Write your message" rows="4"></textarea>
+      <small class="error" id="messageError"></small>
+
+      <button type="submit" class="submitBtn">Submit</button>
+      <p id="successMsg" class="success"></p>
+
+    </form>
+  </div>
+
+  <footer>
+    © 2025 TechForce • Created by Madhan for Cognifyz Internship
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
