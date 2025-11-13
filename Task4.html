@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechForce – Task 4 (Interactive Button)</title>
+
+  <style>
+    /* Only small basic styling allowed since main JS logic is external */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    header {
+      text-align: center;
+      padding: 25px;
+      background-color: #1a73e8;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 35px;
+      letter-spacing: 1px;
+    }
+
+    h3 {
+      margin-top: 8px;
+      font-weight: normal;
+    }
+
+    .content {
+      background: white;
+      padding: 25px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    #colorBtn {
+      padding: 14px 24px;
+      background-color: #1a73e8;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #colorBtn:hover {
+      background-color: #1559b4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background-color: #1a73e8;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>TechForce</h1>
+    <h3>Front-End Internship • Task 4 – JavaScript Interaction</h3>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <div class="content">
+      <h2>Interactive Button</h2>
+      <p>
+        In this task, JavaScript is used to add interactivity to the webpage.  
+        When the user clicks the button, the background color of the entire page changes  
+        to a randomly selected color.  
+      </p>
+      <p>
+        This demonstrates DOM manipulation, event handling, and dynamic styling using JavaScript.
+      </p>
+
+      <br>
+
+      <!-- Button -->
+      <button id="colorBtn">Click to Change Background Color</button>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 TechForce • Developed by Madhan Madhav Gouda for Cognifyz Internship
+  </footer>
+
+  <!-- JavaScript Linking -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
